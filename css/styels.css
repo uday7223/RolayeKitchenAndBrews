@@ -1,0 +1,391 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Reddit Sans", sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#F9F7F7;
+    color: #112D4E;
+    /* text-align: center; */
+}
+
+
+
+header{
+    display: flex;
+    padding:10px 0px;
+    font-weight: 600;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+
+}
+
+
+
+header a img{
+    width: 80px;
+    height:70px;
+    border-radius: 50%;
+    transition: transform 0.1s ease-out;
+
+}
+header a img:hover{
+    
+    transform:scale(1.02);
+
+
+}
+
+header .head-left{
+    margin-left: 5rem;
+    gap: 2rem;  
+}
+header .head-right{
+    margin-left: 22rem;  
+}
+
+header .head-left, .head-right, .txt-logo > p:nth-child(1){
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+        /* color: #F4CE14; */
+        color: #E72929;
+
+
+}
+
+
+header .head-right ul {
+    display: flex;
+    gap: 6rem;
+    list-style: none;
+}
+
+
+header .head-right ul li a, .head-left a{
+    text-decoration: none;        
+        color: #E72929;
+                /* color: white; */
+  
+}
+
+
+header .head-right ul li a:hover,.head-left a:hover {
+    text-decoration:wavy;        
+        color: #112D4E;
+                /* color: white; */
+  
+}
+
+.bg-1{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+.bg-1 .content {
+    position: relative;
+    top: -10%;
+    width: 60%;
+    text-align: center;
+  
+}
+
+.bg-1 .heading {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 90px;
+}
+
+.txt-headingk {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 90px;
+}
+
+.bg-1 .text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.txt-under {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 35px;
+        text-align: center;
+        padding-top:20px;
+    
+}
+
+.bg-1 button {
+    background-color: #112D4E;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    width:200px;
+    height: 50px;
+    border-radius: 6px;
+    border: none ;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.1s ease-out;
+}
+.bg-1 button:hover{
+    background-color: #112d4ee5;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.bg-1-social{
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: .5rem;
+}
+
+.bg-1-social .social {
+transform: scale(2);
+padding: 1rem;
+    cursor: pointer; 
+}
+
+
+.bg-2{
+    /* height:100vh; */
+    background: #fafafa;
+}
+
+.bg-2 .heading{
+    font-size:40px;
+}
+
+
+
+  .cards-con > .header{
+    text-align: center;
+    font-size:40px;
+    font-weight: bold;
+    background-color: lightblue;
+    padding: 10px 0px;      
+
+}
+
+.cards-con .card { 
+    border: 1px solid black;
+    width: 60vh ;
+    height: 80vh;
+    margin-top:20px;
+    border-radius: 15px;
+    /* overflow: hidden; */
+    box-shadow: 1px 1px 18px 1px black;
+
+    
+}
+
+.cards-con {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0px;
+}
+
+.cards-con  img {
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+
+}
+.cards-con h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+    color: rgba(226, 43, 43, 0.879);
+}
+
+
+.cards-con  p{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+    padding-top: 10px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.cards-con  button{
+    border : none;
+    height:40px;
+    width: 140px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight:bold;
+    box-sizing: border-box;   
+    display: block;
+    margin: auto;     
+    background-color: #112D4E; 
+    transition: transform 0.1s ease-out;
+    cursor: pointer;
+    color: white;
+
+
+
+}
+
+
+.bg-1 button {
+    background-color: #112D4E;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    width:200px;
+    height: 50px;
+    border-radius: 6px;
+    border: none ;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.1s ease-out;
+}
+.cards-con button:hover{
+    background-color: #112d4ee5;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.bg-about {
+
+}
+.bg-about .txt-heading > h2{
+
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.bg-about .txt-heading > p{
+
+    text-align: center;
+    margin: 20px 0px;
+    width: 800px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+
+    line-height: 2;
+}
+.bg-about .about-con .card-1 {
+height: auto;
+width: 600px;
+margin-bottom: 20px;
+border-radius : 20px;
+padding: 20px;
+line-height: 2;
+text-align:justify;
+box-shadow: 1px 1px 18px 1px lightgreen;
+}
+.bg-about .about-con .card-1:nth-child(2) {
+   position: relative;
+   right: -800px;
+    }
+    .bg-about .about-con .card-1:nth-child(1) {
+        position: relative;
+        right: -100px;
+         }
+
+
+
+
+
+
+
+
+
+footer{
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    box-sizing: border-box;
+    margin-left:50px ;
+    justify-content: center;
+    /* margin-top: 30px; */
+
+}
+
+
+
+
+
+
+footer > ul {
+    width : 220px;
+    list-style: none;
+    
+}
+
+footer > .txt-logo{
+    position: relative;
+    left: -80px;
+}
+
+footer .txt-logo > p {
+    font-size:25px;
+}
+footer .txt-logo > p:nth-child(2) {
+    font-size:12px;
+}
+
+footer > ul > * {
+    padding-bottom: 10px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    line-height :21px;
+
+}
+
+footer > ul > p {
+    padding-bottom: 20px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height : 24px;
+}
+.footer-con > p {
+    border-top: 1px solid gray;
+    text-align:center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height :21px;
+    padding: 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

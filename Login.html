@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/tab-logo.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Royale Kitchen & Brew</title>
+  </head>
+
+  <body>
+
+    <header>
+        <div class="head-left">
+          <a href="./index.html"> <img src="./images/logo.png" alt="" /></a>
+          <a href="./index.html"><p>Royale Kitchen and Brews <i class="fa-solid fa-heart"></i></p></a>
+        </div>
+        <div class="head-right">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#about-id">ABOUT</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="./Signup.html">SIGN UP</a></li>
+            
+          </ul>
+        </div>
+      </header>
+
+
+    <div class="login-con">
+      <h3>Login Form</h3>
+
+      
+      <form action="">
+          <div class="container">
+  
+              <div class="input-data">
+                  <ul>
+                      <li><i class="fa-solid fa-user"></i><input type="email" placeholder="Email" name="email" id="email" required></li>
+                      <li><i class="fa-solid fa-key"></i><input type="password" placeholder="Password" name="pass" id="pass" required></li>
+                      <li> <button type="submit" id="login">Log in </button></li>
+                  </ul>
+              </div>
+              
+             
+              <ul>
+                  <li> <a href="">Don't have an account ?</a></li>
+                 <li><a href="signup.html">Signup</a></li>
+              </ul>
+              
+      
+      
+      
+          </div>
+      </form>
+  
+    </div>
+    
+
+    <script>
+      let x = document.getElementById("login");
+          x.addEventListener("click",()=>{
+              event.preventDefault();
+              let userEmail = document.getElementById("email").value;
+              let userPass = document.getElementById("pass").value;
+              // window.sessionStorage.setItem("userEmail", userEmail);
+              // window.sessionStorage.setItem("userPass", userPass);
+  
+              let storedEmail = window.sessionStorage.getItem("userEmail");
+              let stroredPass = window.sessionStorage.getItem("userPass");
+  
+              if(userEmail === storedEmail && userPass === stroredPass){
+                  window.open("./index.html");
+              }
+              else {
+                  alert("Please enter right credentials !")
+              }
+  
+  
+          })
+         
+  
+  </script>
+    </body>
+    </html>
+    

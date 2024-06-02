@@ -1,0 +1,91 @@
+@import url('./styels.css');
+
+body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+
+}
+h3{
+    font-size:40px ;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+
+
+.contact-con{
+  height:80vh;
+  display:flex;
+  justify-content: space-evenly;
+  margin-top: 45px;
+}
+.contact-con .container {
+      width: 520px;
+      height: auto;
+      display: flex;
+      position: relative;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border: 2px solid #ffffff30;
+      box-shadow: 0px 0px 20px rgb(0, 0, 0);
+      text-align: center;
+      margin-bottom: 60px;
+      color: rgb(0, 0, 0);
+
+
+}
+
+  .contact-con .container  li{
+  display: inline-block;
+  padding: 10px ;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-top: 10px;
+  list-style: none;
+  width: auto;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.contact-con button{
+  border: none;
+  background: none;
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  width: 150px;
+}
+.contact-con .input-data{
+  margin-top:40px;
+}
+
+.contact-con .input-data button{
+  margin-top:30px;
+  margin-bottom: 20px;
+}
+
+.contact-con .input-data input, textarea {
+ 
+
+    width: 22em;
+    height: 40px;
+    padding: 6px 12px;
+    font-weight: 300;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+
+}
+
+textarea{
+    height: 100px;
+}
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/tab-logo.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sign Up</title>
+  </head>
+
+  <body>
+
+    <header>
+        <div class="head-left">
+          <a href="./index.html"> <img src="./images/logo.png" alt="" /></a>
+          <a href="./index.html"><p>Royale Kitchen and Brews <i class="fa-solid fa-heart"></i></p></a>
+        </div>
+        <div class="head-right">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#about-id">ABOUT</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="./Login.html">LOG IN</a></li>
+            
+          </ul>
+        </div>
+      </header>
+    <div class="signup-con">
+       <h3>Sign Up Form</h3>
+
+
+
+
+    
+
+        <form action="">
+            
+            <div class="container">
+        
+                <div class="input-data">
+                    <ul>
+                        <li><i class="fa-solid fa-user"></i><input type="email" placeholder="Email" id="email" name="email" value="" required></li>
+                        <li><i class="fa-solid fa-phone"></i><input type="tel" min="10" max="10" placeholder="Enter Phone number" name="phoneNumber" id="phoneNumber" value="" required> </li>
+                        <li><i class="fa-solid fa-key"></i><input type="password" placeholder="Set a password" id="pass" name="pass" required
+                             ></li>
+                        
+                        <li><button type="submit" id="signup" target="_self">Sign Up</button></li>
+                    </ul>
+                </div>
+                
+               
+                <ul>
+                    <li> <a href="">Already have an account ?</a></li>
+                   <li><a href="login.html">Log in</a></li>
+                </ul>
+                
+        
+        
+        
+            </div>
+        </form>
+   
+  
+    </div>
+    
+
+    <script>
+        let x = document.getElementById("signup");
+            x.addEventListener("click",()=>{
+                // event.preventDefault();
+                let userEmail =document.getElementById("email").value;
+            
+                let userPhone = document.getElementById("phoneNumber").value;
+            
+                let userPass = document.getElementById("pass").value;
+                sessionStorage.setItem("userEmail", userEmail);
+                sessionStorage.setItem("userPhone", userPhone);
+                sessionStorage.setItem("userPass", userPass);
+                window.open("./login.html")
+
+            })
+ 
+            
+    </script>
+    </body>
+    </html>
+    
